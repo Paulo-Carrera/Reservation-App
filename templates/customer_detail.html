@@ -1,6 +1,6 @@
 
 {% extends 'base.html' %}
-{% block title %}{{ customer.firstName }} {{ customer.lastName }}{% endblock %}
+{% block title %}{{ customer.getFullName() }}{% endblock %}
 
 {% block content %}
 

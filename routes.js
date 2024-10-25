@@ -54,9 +54,9 @@ router.get("/:id/", async function(req, res, next) {
 
     const reservations = await customer.getReservations();
 
-    const fullName = await customer.getFullName();
+    // const fullName = await customer.getFullName();
 
-    return res.render("customer_detail.html", { customer, reservations, fullName });
+    return res.render("customer_detail.html", { customer, reservations });
   } catch (err) {
     return next(err);
   }
